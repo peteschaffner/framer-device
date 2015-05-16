@@ -24,3 +24,6 @@ module.exports = class Device extends DeviceComponent {
     Framer.Device = this
   }
 }
+
+// Hack to force the correct orientation upon construction
+Framer.Defaults.DeviceComponent = { 'deviceScale' : -1 }
