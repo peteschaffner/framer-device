@@ -2,32 +2,22 @@
   "name": "framer-device",
   "version": "0.0.1",
   "description": "Device constructor shorthand that defaults to @1x",
+  "author": "pjschaffner@gmail.com",
+  "repository": "peteschaffner/framer-device",
   "main": "index.js",
   "devDependencies": {
     "babelify": "^6.0.2",
-    "browserify": "^10.0.0",
-    "budo": "^4.0.0",
-    "coffeeify": "^1.1.0",
-    "framerify": "peteschaffner/framerify",
-    "garnish": "^2.1.3"
+    "framer-cli": "peteschaffner/framer-cli",
+    "framerify": "peteschaffner/framerify"
   },
   "scripts": {
-    "start": "NODE_PATH=./modules budo index.js:bundle.js --live --port 3000 -- --transform coffeeify --transform babelify --require ./index.js:framer-device --extension .coffee | garnish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/peteschaffner/framer-device.git"
+    "start": "framer --module"
   },
   "keywords": [
     "prototyping",
     "framerjs"
   ],
-  "author": "pjschaffner@gmail.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/peteschaffner/framer-device/issues"
-  },
-  "homepage": "https://github.com/peteschaffner/framer-device",
   "browserify": {
     "transform": [
       "babelify",
