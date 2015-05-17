@@ -6,9 +6,7 @@
   "repository": "peteschaffner/framer-device",
   "main": "index.js",
   "devDependencies": {
-    "babelify": "^6.0.2",
-    "framer-cli": "peteschaffner/framer-cli",
-    "framerify": "peteschaffner/framerify"
+    "framer-cli": "peteschaffner/framer-cli"
   },
   "scripts": {
     "start": "framer --module"
@@ -17,11 +15,5 @@
     "prototyping",
     "framerjs"
   ],
-  "license": "MIT",
-  "browserify": {
-    "transform": [
-      "babelify",
-      "framerify"
-    ]
-  }
+  "license": "MIT"
 }
