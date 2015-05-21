@@ -1,6 +1,6 @@
 {
   "name": "framer-device",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Device constructor shorthand that defaults to @1x",
   "author": {
     "name": "Pete Schaffner",
@@ -15,16 +15,12 @@
     "type": "git",
     "url": "git+ssh://git@github.com/peteschaffner/framer-device.git"
   },
-  "keywords": [
-    "prototyping",
-    "framerjs"
-  ],
-  "license": "MIT",
   "main": "index.js",
   "devDependencies": {
     "framer-cli": "^0.1.0"
   },
   "scripts": {
     "start": "framer preview"
-  }
+  },
+  "framer": { "type": "module" }
 }
