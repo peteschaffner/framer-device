@@ -10,7 +10,9 @@
 
 module.exports = class Device extends DeviceComponent {
   constructor(opts={}) {
-    opts.contentScale = opts.contentScale || 2
+    opts.contentScale = opts.contentScale || Utils.isDesktop()
+      ? window.devicePixelRatio
+      : 1
 
     super(opts)
 
